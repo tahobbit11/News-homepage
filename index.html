@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <link rel="stylesheet" href="./CSS/main.css">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,9 +24,9 @@
   <main>
     <div class="menu">
       <img src="./assets/images/logo.svg" alt="logo">
-      <img src="./assets/images/icon-menu.svg" alt="menu">
-      <img src="./assets/images/icon-menu-close.svg" alt="menu-close">
-      <nav>
+      <img src="./assets/images/icon-menu.svg" alt="menu" id="menu-open" style="display: flex;">
+      <img src="./assets/images/icon-menu-close.svg" alt="menu-close" id="menu-close" style="display: none;">
+      <nav id="options" style="display: none;">
         <ul>
           <li>Home</li>
           <li>New</li>
@@ -32,7 +38,7 @@
     </div>
     <div class="content-wrapper">
       <div class="new-story">
-        <img src="./assets/images/image-web-3-mobile.jpg">
+        <div id="web-3"></div>
         <div class="story">
           <h1>The Bright Future of Web 3.0?</h1>
           <p>  
@@ -42,21 +48,25 @@
           <button class="read">Read More</button>
         </div>
       </div>
+
       <div class="new-articles">
         <h2>New</h2>
         <div class="article">
           <h3>Hydrogen vs Electric Cars</h3>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <div class="article-buffer"></div>
         </div>
         <div class="article">
           <h3>The downsides of AI Artistry</h3>
           <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          <div class="article-buffer"></div>
         </div>
         <div class="article">
           <h3>Is VC Funding Drying Up</h3>
           <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
       </div>
+      
       <div class="numbered-articles">
         <div class="bottom-articles">
           <img src="./assets/images/image-retro-pcs.jpg" alt="retro-pc">
