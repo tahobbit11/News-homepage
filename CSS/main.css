@@ -97,6 +97,7 @@
         align-items: center;
         flex-direction: column;
         text-align: left;
+        line-height: 1.5;
     }
 
     main {
@@ -115,7 +116,8 @@
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    p {
         margin: 0
     }
 
@@ -168,6 +170,10 @@
         height: 325px;
     }
 
+    .story {
+      margin-bottom: 60px;
+    }
+
     .read {
         background-color: hsl(5, 85%, 63%);
         border: none;
@@ -175,7 +181,6 @@
         color: white;
         font-size: 1.2em;
         letter-spacing: .2em;
-        margin-bottom: 60px;
     }
 
     .new-articles {
@@ -313,8 +318,195 @@
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width: 35em) {
+  @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+    main {
+      width: 665px;
+    }
+
+    #options {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #options ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #options ul li {
+      padding-right: 20px;
+    }
+
+    #options ul li:nth-child(5){
+      padding: 0;
+    }
+
+    #web-3 {
+      background-image: url(../assets/images/image-web-3-desktop.jpg);
+      background-position: center;
+      background-size: contain;
+      width: 665px;
+    }
+
+    .new-story {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .story {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .story h1 {
+      font-size: 2.5em;
+    }
+
+    .story-content {
+      padding-left: 40px;
+    }
+
+    .story-content p {
+      margin-bottom: 40px;
+      font-size: 1.2em;
+    }
+
+    .new-articles {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0;
+    }
+    
+    .new-articles h2 {
+      font-size: 2em;
+      margin-right: 20px;
+    }
+
+    .article {
+      width: 200px;
+      padding: 0 20px;
+    }
+
+    .article:nth-child(3) {
+      border-left: 1px solid hsl(236, 13%, 42%);
+      border-right: 1px solid hsl(236, 13%, 42%);
+    }
+
+    .article-buffer {
+      border: none;
+    }
+
+    .numbered-articles {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+    }
+
+    .bottom-articles {
+      width: 221px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .bottom-content {
+      margin: 0;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 1200px){
+    body {
+      justify-content: flex-start;
+    }
+
+    main {
+      width: 1100px;
+
+    }
+
+    .menu {
+      margin-bottom: 55px;
+    }
+
+    #options ul li {
+      padding-right: 40px;
+    }
+
+    #options ul li:nth-child(5){
+      padding: 0;
+    }
+
+    .new-story {
+      width: 730px;
+    }
+
+    #web-3 {
+      width: 730px;
+      height: 300px;
+    }
+
+    .story {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+
+    .story-content {
+      padding-left: 60px;
+    }
+
+    .new-story-article-wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 510px;
+      margin-bottom: 60px;
+    }
+
+    .new-articles {
+      display: flex;
+      flex-direction: column;
+      justify-content: ;
+      align-items: ;
+      margin-left: 30px;
+    }
+
+    .new-articles h2 {
+      font-size: 2em;
+      margin-right: 0;
+    }
+
+    .article {
+      width: auto;
+      padding: 0;
+    }
+
+    .article:nth-child(3) {
+      border: none;
+    }
+
+    .article-buffer {
+      border: 1px solid hsl(236, 13%, 42%);
+    }
+
+    .bottom-articles {
+      width: 366px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-content {
+      margin-left: 20px;
+    }
   }
   
   @media print,
