@@ -122,23 +122,11 @@
     }
 
     h1 {
-        font-size: ;
-    }
-
-    h2 {
-        font-size: ;
-    }
-
-    h3 {
-        font-size: ;
+        font-size: 2em;
     }
 
     h4 {
         font-size: 1.1em;
-    }
-
-    p {
-
     }
 
   /* Classes, Ids, etc. */
@@ -150,15 +138,44 @@
         flex-direction: row;
     }
 
-    #options {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
+    #open {
+      height: 20px;
+      width: 40px;
+      border: none;
+      background-color: transparent;
     }
 
-    .content-wrapper {
+    #close {
+      height: 20px;
+      width: 40px;
+      border: none;
+      background-color: transparent;
+      position: fixed;
+      left: 80%;
+      top: 4%;
+    }
 
+    #options {
+        position: fixed;
+        top: 0%;
+        left: 34%;
+        background-color: white;
+        width: 350px;
+        height: 100vh;
+    }
+
+    #options ul {
+      position: fixed;
+      top: 12.5%;
+    }
+
+    #options ul li {
+      font-size: 1.2em;
+      padding-bottom: 30px;
+    }
+
+    #options ul li:hover {
+      color: hsl(5, 85%, 63%);
     }
 
     #web-3 {
@@ -181,6 +198,11 @@
         color: white;
         font-size: 1.2em;
         letter-spacing: .2em;
+        margin-top: 20px;
+    }
+
+    .read:hover {
+      background-color: black;
     }
 
     .new-articles {
@@ -193,6 +215,10 @@
     .new-articles h2 {
         color: hsl(35, 77%, 62%);
         margin-bottom: 40px;
+    }
+
+    .article h3:hover {
+      color: hsl(35, 77%, 62%);
     }
 
     .article p{
@@ -232,6 +258,10 @@
 
     .bottom-content h4 {
         font-weight: 800;
+    }
+
+    .bottom-content h4:hover {
+      color: hsl(5, 85%, 63%);
     }
 
 
@@ -327,15 +357,23 @@
     #options {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      position: inherit;
+      top: auto;
+      left: auto;
+      width: auto;
+      height: auto;
     }
 
     #options ul {
       display: flex;
       flex-direction: row;
+      position: inherit;
     }
 
     #options ul li {
       padding-right: 20px;
+      padding-bottom: 0;
     }
 
     #options ul li:nth-child(5){
@@ -372,6 +410,10 @@
     .story-content p {
       margin-bottom: 40px;
       font-size: 1.2em;
+    }
+
+    .read {
+      margin: 0;
     }
 
     .new-articles {
@@ -455,12 +497,16 @@
     }
 
     .story {
-      margin-top: 40px;
+      margin-top: 25px;
       margin-bottom: 0;
     }
 
     .story-content {
       padding-left: 60px;
+    }
+
+    .read {
+      margin: 0;
     }
 
     .new-story-article-wrapper {
@@ -473,8 +519,6 @@
     .new-articles {
       display: flex;
       flex-direction: column;
-      justify-content: ;
-      align-items: ;
       margin-left: 30px;
     }
 

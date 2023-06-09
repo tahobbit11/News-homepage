@@ -21,12 +21,12 @@
   </style>
 </head>
 <body>
-  <main>
+  
+  <main>      
     <div class="menu">
-      <img src="./assets/images/logo.svg" alt="logo">
-      <img src="./assets/images/icon-menu.svg" alt="menu" id="menu-open" style="display: flex;">
-      <img src="./assets/images/icon-menu-close.svg" alt="menu-close" id="menu-close" style="display: none;">
+      <img src="./assets/images/logo.svg" alt="logo">      
       <nav id="options" style="display: none;">
+        <button id="close" style="display: none;"><img src="./assets/images/icon-menu-close.svg" alt="menu-close" id="menu-close"></button>
         <ul>
           <li>Home</li>
           <li>New</li>
@@ -34,7 +34,9 @@
           <li>Trending</li>
           <li>Categories</li>
         </ul>
+        
       </nav>
+      <button id="open" style="display: flex;"><img src="./assets/images/icon-menu.svg" alt="menu" id="menu-open"></button>
     </div>
     <div class="content-wrapper">
       <div class="new-story-article-wrapper">
@@ -48,7 +50,7 @@
                 But is it really fulfilling its promise?
               </p>
               <button class="read">Read More</button>
-              </div>
+            </div>
           </div>
         </div>
 
@@ -70,7 +72,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="numbered-articles">
         <div class="bottom-articles">
           <img src="./assets/images/image-retro-pcs.jpg" alt="retro-pc">
